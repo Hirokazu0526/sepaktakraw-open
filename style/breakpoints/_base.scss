@@ -4,7 +4,7 @@ Stylesheet: ベーススタイル
 
 ******************************************************************/
 body {
-    font-family: "Audiowide","Sawarabi Mincho", "Kameron", "Noto Sans JP", sans-serif;
+    font-family: "Audiowide","Sawarabi Mincho", 'PT Serif', "Kameron", "Noto Sans JP", sans-serif;
     // background: rgb(1, 18, 105);
     background-image:linear-gradient( to right, rgb(0, 8, 90), rgb(71, 144, 233),rgb(0, 8, 90));
     padding: 0;
@@ -337,6 +337,7 @@ footer{
   & small{
     color: white;
     font-size: 1.2rem;
+    font-family: 'PT Serif';
     line-height: 100px;
   }
 }

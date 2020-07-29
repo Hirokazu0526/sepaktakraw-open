@@ -250,13 +250,13 @@ body {
 
   &-subttl{
     color: white;
-      font-size: 1.3rem;
+      font-size: 1rem;
   }
 
   &-text{
     p{
       color: white;
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
   }
 
@@ -290,33 +290,48 @@ body {
 }
 
 .movie{
-  
-  &-pc{
-    display: none;
-  }
-  &-sp{
-    margin: 10px auto;
-  }
-
   &-text{
   color: $cWhite;
   font-size: 0.7rem;
-  padding: 0 5px;
+  padding: 10px 5px;
+  margin-bottom: 10px;
   }
 }
 
-.map{
-  &-pc{
-    display: none;
+.youtube{
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  iframe{
+    position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
   }
-  &-sp{
-  margin-top: 10px;
-  }
+}
+
+.gmap{
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+
+    iframe{
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+
 }
 
 #Sponsor{
   background: #fff;
-  margin-top: 100px;
+  margin-top: 30px;
   padding-top: 20px;
   padding-bottom: 40px;
 }

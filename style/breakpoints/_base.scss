@@ -133,18 +133,6 @@ body {
           transition: all 0.3s;
         }
       }
-
-      // &:before{
-      //   content: '';
-      //   width: 70px;
-      //   height: 70px;
-      //   background: url(/images/ball.png);
-      //   background-size: cover;
-      //   background-repeat: no-repeat;
-      //   position: relative;
-      //   left: -120px;
-      //   // display: none;
-      // }
     }
   }
 }
@@ -171,11 +159,6 @@ body {
       width: 200px;
       padding-top: 5px;
       
-
-      & .item{
-        width: 200px;
-       
-      }
 
       & a{
         opacity: 0.8;

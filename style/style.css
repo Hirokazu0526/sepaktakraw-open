@@ -1034,6 +1034,7 @@ img {
   height: 90px;
   width: 100%;
   background: rgba(0, 8, 90, 0.5);
+  z-index: 10;
 }
 
 .header-logo-ttl {

@@ -65,8 +65,10 @@ body {
 //headerここから
 .header{
   &-top{
-    position: relative;
+    position: fixed;
     height: 90px;
+    width: 100%;
+    background: rgba(0, 8, 90, 0.5);
   }
   &-logo{
     &-ttl{
@@ -177,7 +179,12 @@ body {
 //headerここまで
 
 //mainここから
+main{
+  padding-top: 90px;
+  
+}
 .main{
+  
   &-slider{
     &-pc{
       width: 100%;

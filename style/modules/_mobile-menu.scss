@@ -1,0 +1,101 @@
+$cMenuClose: $cBlack;
+$cMenuOpen: $cBlack;
+
+
+
+.mobile-menu {
+
+    &__btn {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background-color: unset;
+        border: none;
+        outline: none !important;
+        cursor: pointer;
+        z-index: 20;
+    
+        & > span {
+            background-color: rgb(233, 140, 0);
+            width: 35px;
+            height: 2px;
+            display: block;
+            margin-bottom: 9px;
+            transition: transform 0.7s;
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+}
+
+.menu-open {
+    
+    & .mobile-menu {
+        
+        &__item {
+            transform: none;
+            opacity: 1;
+
+            @for $i from 1 through 5 {
+                &:nth-child(#{$i}) {
+                    transition-delay: $i * 0.07s;
+                }
+            }
+        }
+        &__btn {
+            & > span {
+                background-color:  rgb(233, 140, 0);
+    
+                &:nth-child(1) {
+                    transition-delay: 70ms;
+                    transform: translateY(11px) rotate(135deg);
+                }
+                &:nth-child(2) {
+                    transition-delay: 0s;
+                    transform:  translateX(-18px) scaleX(0);
+                }
+                &:nth-child(3) {
+                    transition-delay: 140ms;
+                    transform: translateY(-11px) rotate(-135deg);
+                }
+            }
+        }
+    }
+
+    & .sns{
+        &-icon{
+        display: flex;
+        position: fixed;
+        right: 0;
+        z-index: 20;
+        top: 240px;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+
+        &-item{
+            width: 70px;
+        }
+    }
+    .item{
+        width: 170px;
+    }
+
+    .mobile-inner{
+        background:  rgba(0, 8, 90, 0.8);
+        transition: all 0.5s;
+    }
+}
+
+.mobile-inner{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 450px;
+    z-index: 19;
+    transition: all 0.5s;
+}

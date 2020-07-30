@@ -32,6 +32,32 @@ $cMenuOpen: $cBlack;
 }
 
 .menu-open {
+
+   
+
+    & .sns{
+        &-icon{
+        display: flex;
+        position: fixed;
+        right: 0;
+        z-index: 20;
+        top: 240px;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+
+        &-item{
+            width: 70px;
+        }
+    }
+    .item{
+        width: 170px;
+    }
+
+    .mobile-inner{
+        background:  rgba(0, 8, 90, 0.8);
+        transition: all 0.5s;
+    }
     
     & .mobile-menu {
         
@@ -65,29 +91,7 @@ $cMenuOpen: $cBlack;
         }
     }
 
-    & .sns{
-        &-icon{
-        display: flex;
-        position: fixed;
-        right: 0;
-        z-index: 20;
-        top: 240px;
-        flex-wrap: wrap;
-        justify-content: center;
-        }
-
-        &-item{
-            width: 70px;
-        }
-    }
-    .item{
-        width: 170px;
-    }
-
-    .mobile-inner{
-        background:  rgba(0, 8, 90, 0.8);
-        transition: all 0.5s;
-    }
+    
 }
 
 .mobile-inner{

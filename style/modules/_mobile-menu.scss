@@ -27,34 +27,69 @@ $cMenuOpen: $cBlack;
                 margin-bottom: 0;
             }
         }
+    }  
+}
+
+.mobile{
+    &-inner{
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background:  rgba(0, 8, 90, 0.8);
+        z-index: 19;
+        transition: all 0.7s;
     }
-    
+
+    &-nav{
+        &-list{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: relative;
+            top: 50px;
+            right: 15px;
+
+            li{
+                margin-bottom: 5px;
+            }
+
+            a{
+                display: inline-block;
+                font-size: 2rem;
+                color: #ff0000;
+                background: -webkit-linear-gradient(0deg, #ff1100, #9A1D1D, #ff1100);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    &-sns-icon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 300px;
+        margin-top: 50px;
+
+        
+        a{
+            display: inline-block;
+            margin: 10px;
+            & .sns-item{
+                width: 80px;
+                
+            }
+
+            & .item{
+                width: 100%;
+            }
+        }
+    }
 }
 
 .menu-open {
-
-
-    
-   
-
-    & .sns{
-        &-icon{
-        display: flex;
-        position: fixed;
-        right: 0;
-        z-index: 20;
-        top: 320px;
-        flex-wrap: wrap;
-        justify-content: center;
-        }
-
-        &-item{
-            width: 70px;
-        }
-    }
-    .item{
-        width: 170px;
-    }
 
     .mobile-inner{
         top: 0;
@@ -92,18 +127,7 @@ $cMenuOpen: $cBlack;
                 }
             }
         }
-    }
-
-    
+    }   
 }
 
-.mobile-inner{
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 300px;
-    height: 550px;
-    background:  rgba(0, 8, 90, 0.8);
-    z-index: 19;
-    transition: all 0.7s;
-}
+

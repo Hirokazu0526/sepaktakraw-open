@@ -68,7 +68,6 @@ body {
     position: fixed;
     height: 90px;
     width: 100%;
-    background: rgba(0, 8, 90, 0.5);
     z-index: 10;
   }
   &-logo{
@@ -111,7 +110,6 @@ body {
         transform: translateX(-50%);
         border-top: none;
         border-bottom: none;
-        background-color: rgba(0, 8, 90, 0.8);
         width: 100%;
       }
 

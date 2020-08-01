@@ -129,12 +129,12 @@ body {
         -webkit-text-fill-color: transparent;
         transition: all 0.3s;
         
-        &:hover{
-          // color: blue;
+        // &:hover{
+        //   // color: blue;
           
-          font-size: 2rem;
-          transition: all 0.3s;
-        }
+        //   font-size: 2rem;
+        //   transition: all 0.3s;
+        // }
       }
     }
   }
@@ -165,9 +165,9 @@ body {
 
       & a{
         opacity: 0.8;
-        &:hover{
-          opacity: 1;
-        }
+        // &:hover{
+        //   opacity: 1;
+        // }
 
       }
     }
@@ -227,7 +227,7 @@ main{
 
   &-info{
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
     
   }
 
@@ -259,6 +259,7 @@ main{
     }
     p{
       font-size: 0.8rem;
+      line-height: 25px;
     }
   }
 }

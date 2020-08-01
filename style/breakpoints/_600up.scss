@@ -21,7 +21,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
         height: 120px;
         background: none;
         z-index: 20;
-        background: rbga(0, 12, 75, 0.8);
+        background: rgba(0, 8, 90, 0.5);
     }
     &-logo{
         &-ttl{
@@ -50,7 +50,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
         flex-wrap: wrap;
         width: 100%;
         z-index: 20;
-        background: rbga(0, 12, 75, 0.8);
+        background-color: rgba(0, 8, 90, 0.5);
 
         &-list{
 

@@ -1081,7 +1081,6 @@ img {
   position: fixed;
   height: 90px;
   width: 100%;
-  background: rgba(0, 8, 90, 0.5);
   z-index: 10;
 }
 
@@ -1123,7 +1122,6 @@ img {
           transform: translateX(-50%);
   border-top: none;
   border-bottom: none;
-  background-color: rgba(0, 8, 90, 0.8);
   width: 100%;
 }
 
@@ -1401,7 +1399,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     height: 120px;
     background: none;
     z-index: 20;
-    background: rbga(0, 12, 75, 0.8);
+    background: rgba(0, 8, 90, 0.5);
   }
   .header-logo-ttl {
     font-size: 1.3rem;
@@ -1429,7 +1427,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
         flex-wrap: wrap;
     width: 100%;
     z-index: 20;
-    background: rbga(0, 12, 75, 0.8);
+    background-color: rgba(0, 8, 90, 0.5);
   }
   .header-nav-list a {
     font-size: 1.3rem;

@@ -8,4 +8,42 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     &__btn {
         display: none;
     }
-  }
+}
+
+.header{
+    &-top{
+        display: inline-block;
+        position: unset;
+        height: 120px;
+        background: none;
+    }
+    &-logo{
+        &-ttl{
+            font-size: 1.3rem;
+            top: 30px;
+            left: 20px;
+        }
+    }
+    &-chara{
+        display: block;
+
+        img{
+            width: 60px;
+            top: 20px;
+            right: 275px;
+        }
+    }
+
+    &-nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.sns{
+    &-icon{
+        display: inline-block;
+        width: 220px;
+    }
+}
+

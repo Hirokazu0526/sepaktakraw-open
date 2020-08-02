@@ -1649,6 +1649,66 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+  .header-logo-ttl {
+    font-size: 2.2rem;
+    top: 15px;
+    left: 50px;
+  }
+  .header-chara img {
+    right: 350px;
+  }
+  .header-nav-list a {
+    font-size: 2rem;
+  }
+  .header-nav-list a:hover {
+    font-size: 2.2rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .bc-text {
+    top: 50%;
+    font-size: 4rem;
+  }
+  .sponsor-logo a {
+    display: block;
+    width: 260px;
+    margin: 0 30px;
+  }
+  .sponsor-item {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .sns-icon {
+    right: 110px;
+  }
+  .sns-icon a:hover {
+    opacity: 1;
+  }
+  .section-title {
+    font-size: 3rem;
+  }
+  .section-subttl {
+    font-size: 1.4rem;
+  }
+  .section-subttl.stadium {
+    font-size: 2rem;
+  }
+  .section-text p {
+    font-size: 1.2rem;
+  }
+  .section-adress {
+    color: white;
+    line-height: 30px;
+  }
+  .section-adress h4 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    line-height: 40px;
+  }
+  .section-adress p {
+    font-size: 1.1rem;
+    line-height: 32px;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

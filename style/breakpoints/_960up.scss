@@ -21,7 +21,87 @@ Stylesheet: 960px以上のモニタで適用
 .pb-lg {
   padding-bottom: 150px !important;
 }
+.inner{
+  width: 85%;
+  margin: 0 auto;
+}
 
-
-
+.header{
   
+  &-logo{
+      &-ttl{
+          font-size: 2rem;
+          top: 20px;
+          left: 30px;
+      }
+  }
+
+  &-nav{
+    &-list{
+      a{
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+
+
+.sponsor{
+  &-logo{
+   
+    a{
+      display: block;
+      width: 260px;
+      margin: 0 30px;
+    }
+  }
+  &-item{
+    width: 100%;
+    margin-top: 30px;
+
+  }
+}
+
+.section{
+  &-title{
+    font-size: 3rem;
+  }
+
+  &-subttl{
+      font-size: 1.4rem;
+      &.stadium{
+        font-size: 2rem;
+    }
+  }
+
+  &-text{
+    p{
+    font-size: 1.2rem;
+    }
+  }
+
+  &-adress{
+    color: $cWhite;
+    line-height: 30px;
+    h4{
+      font-size: 1.6rem;
+      margin-bottom: 5px;
+      line-height: 40px;
+    }
+    p{
+      font-size: 1.1rem;
+      line-height: 32px;
+    }
+  }
+}
+
+.section-subttl.sdiv{
+  font-size: 2rem;
+}
+.section-subttl.mdiv{
+font-size: 2rem;
+}
+.section-subttl.wdiv{
+font-size: 2rem;
+}

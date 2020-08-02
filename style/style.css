@@ -1586,6 +1586,10 @@ Stylesheet: 960px以上のモニタで適用
   .header-nav-list a {
     font-size: 1.7rem;
   }
+  .bc-text {
+    top: 35%;
+    font-size: 3.8rem;
+  }
   .sponsor-logo a {
     display: block;
     width: 260px;

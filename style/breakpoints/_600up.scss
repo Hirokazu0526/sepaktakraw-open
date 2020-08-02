@@ -124,6 +124,10 @@ main{
   
     &-subttl{
         font-size: 1.1rem;
+        &.stadium{
+            font-size: 1.8rem;
+        }
+  
     }
   
   
@@ -139,6 +143,18 @@ main{
     }
   }
 
+  .section-subttl.sdiv{
+      font-size: 1.8rem;
+  }
+  .section-subttl.mdiv{
+    font-size: 1.8rem;
+  }
+  .section-subttl.wdiv{
+    font-size: 1.8rem;
+  }
+
+
+
   #Sponsor{
     background: #fff;
     margin-top: 30px;
@@ -152,10 +168,11 @@ main{
       flex-wrap: wrap;
       align-items: center;
       flex-direction: row;
+      justify-content: center;
       a{
         display: block;
-        width: 200px;
-        margin: 0 auto;
+        width: 220px;
+        margin: 0 16px;
         
   
         // &:nth-child(1){
@@ -184,3 +201,4 @@ main{
   
     }
   }
+

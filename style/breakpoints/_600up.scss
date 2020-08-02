@@ -138,3 +138,49 @@ main{
       }
     }
   }
+
+  #Sponsor{
+    background: #fff;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  
+  .sponsor{
+    &-logo{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row;
+      a{
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        
+  
+        // &:nth-child(1){
+        //   align-self: center;
+        // }
+        &:nth-child(2){
+          width: 150px;
+        }
+        // &:nth-child(3){
+        //   align-self: center;
+        // }
+        // &:nth-child(4){
+        //   align-self: center;
+        // }
+        &:nth-child(5){
+          width: 150px;
+        }
+        &:nth-child(6){
+          margin-bottom: 0px;
+        }
+      }
+    }
+    &-item{
+      width: 100%;
+      margin-top: 30px;
+  
+    }
+  }

@@ -3,3 +3,101 @@
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+.header{
+  
+    &-logo{
+        &-ttl{
+            font-size: 2.2rem;
+            top: 15px;
+            left: 50px;
+        }
+    }
+
+    &-chara{
+        img{
+            right: 350px;
+        }
+    }
+  
+    &-nav{
+      &-list{
+        a{
+          font-size: 2rem;
+            &:hover{
+          // color: blue;
+            font-size: 2.2rem;
+            transition: all 0.3s;
+        }
+          
+
+          }
+        }
+      
+    }
+  }
+  
+  .bc{
+    &-text{
+      top: 50%;
+      font-size: 4rem;
+  
+    }
+  }
+  
+  .sponsor{
+    &-logo{
+     
+      a{
+        display: block;
+        width: 260px;
+        margin: 0 30px;
+      }
+    }
+    &-item{
+      width: 100%;
+      margin-top: 30px;
+  
+    }
+  }
+
+  .sns-icon{
+      right: 110px;
+      a{
+        &:hover{
+            opacity: 1;
+            }
+      }
+  }
+  
+  .section{
+    &-title{
+      font-size: 3rem;
+    }
+  
+    &-subttl{
+        font-size: 1.4rem;
+        &.stadium{
+          font-size: 2rem;
+      }
+    }
+  
+    &-text{
+      p{
+      font-size: 1.2rem;
+      }
+    }
+  
+    &-adress{
+      color: $cWhite;
+      line-height: 30px;
+      h4{
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+        line-height: 40px;
+      }
+      p{
+        font-size: 1.1rem;
+        line-height: 32px;
+      }
+    }
+  }

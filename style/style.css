@@ -1485,6 +1485,9 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .section-subttl {
     font-size: 1.1rem;
   }
+  .section-subttl.stadium {
+    font-size: 1.8rem;
+  }
   .section-adress {
     color: white;
     line-height: 30px;
@@ -1494,6 +1497,15 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
   .section-adress p {
     font-size: 0.9rem;
+  }
+  .section-subttl.sdiv {
+    font-size: 1.8rem;
+  }
+  .section-subttl.mdiv {
+    font-size: 1.8rem;
+  }
+  .section-subttl.wdiv {
+    font-size: 1.8rem;
   }
   #Sponsor {
     background: #fff;
@@ -1514,11 +1526,14 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .sponsor-logo a {
     display: block;
-    width: 200px;
-    margin: 0 auto;
+    width: 220px;
+    margin: 0 16px;
   }
   .sponsor-logo a:nth-child(2) {
     width: 150px;
@@ -1558,6 +1573,61 @@ Stylesheet: 960px以上のモニタで適用
   }
   .pb-lg, .hero {
     padding-bottom: 150px !important;
+  }
+  .inner {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .header-logo-ttl {
+    font-size: 2rem;
+    top: 20px;
+    left: 30px;
+  }
+  .header-nav-list a {
+    font-size: 1.7rem;
+  }
+  .sponsor-logo a {
+    display: block;
+    width: 260px;
+    margin: 0 30px;
+  }
+  .sponsor-item {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .section-title {
+    font-size: 3rem;
+  }
+  .section-subttl {
+    font-size: 1.4rem;
+  }
+  .section-subttl.stadium {
+    font-size: 2rem;
+  }
+  .section-text p {
+    font-size: 1.2rem;
+  }
+  .section-adress {
+    color: white;
+    line-height: 30px;
+  }
+  .section-adress h4 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    line-height: 40px;
+  }
+  .section-adress p {
+    font-size: 1.1rem;
+    line-height: 32px;
+  }
+  .section-subttl.sdiv {
+    font-size: 2rem;
+  }
+  .section-subttl.mdiv {
+    font-size: 2rem;
+  }
+  .section-subttl.wdiv {
+    font-size: 2rem;
   }
 }
 

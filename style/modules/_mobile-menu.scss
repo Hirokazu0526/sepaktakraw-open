@@ -79,10 +79,10 @@ $cMenuOpen: $cBlack;
     &-sns-icon{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-end;
         height: 300px;
-        margin-top: 50px;
-
+        margin-top: 60px;
+        
         
         a{
             display: inline-block;

@@ -957,6 +957,10 @@ img {
   transition: 0.3s;
 }
 
+.loading img {
+  width: 50px;
+}
+
 .loading.active {
   opacity: 1;
   visibility: visible;
@@ -974,10 +978,37 @@ img {
   }
 }
 
-.loadongText {
+@-webkit-keyframes roolling {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes roolling {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.loadingText {
   -webkit-animation: flashing .5s infinite;
           animation: flashing .5s infinite;
   color: #2141f5;
+}
+
+.loadingball {
+  -webkit-animation: roolling 1s ease-in-out infinite;
+          animation: roolling 1s ease-in-out infinite;
 }
 
 .header-top {

@@ -24,7 +24,7 @@ document.addEventListener('scroll', function(){
 
 const targetImg = document.querySelector('#main-slider');
 document.addEventListener('scroll', function(){
-    const targetImgDistance = targetNav.getBoundingClientRect().top + targetImg.clientHeight * .3
+    const targetImgDistance = targetNav.getBoundingClientRect().top + targetImg.clientHeight * .7
 
     if(targetImgDistance <= 0){  
         document.getElementById('bg').classList.add('bg-active');

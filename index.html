@@ -10,14 +10,17 @@
 </head>
 <body>
     <div id="global-container">
+        <div id="loading" class="loading active">
+            <div class="loadongText">Loading...</div>
+        </div>
         <header>
             <div class="header-inner">
-                <div class="header-top">
+                <div class="header-top" id="header-top">
                     <div class="header-logo">
-                        <h1 class="header-logo-ttl" id="header-logo">
-                            The 27rd All Japan<br> 
-                            SepakTakraw Open Championship
-                        </h1>
+                        <div class="header-logo-ttl" id="header-logo">
+                            <h1 class="textAnimation">The 27rd All Japan</h1>
+                            <h1 class="textAnimation">SepakTakraw Open Championship</h1>
+                        </div>
                         <div class="header-chara">
                             <img src="images/tiger.png" alt="セパタイガー"　class="taiger">
                         </div>
@@ -70,11 +73,11 @@
             </div>
         </header>
         <main><!-- メインここから -->
-            <div class="main-slider">
+            <div class="main-slider" id="main-slider">
                 <img class="main-slider-pc" src="images/sepa_site.png" alt="キービジュアル">
                 <img class="main-slider-sp" src="images/sepa_site_sp.png" alt="キービジュアル">
             </div>
-            <div class="bc">
+            <div class="bc" id="bg">
                 <div class="bc-text">The 27rd<br>
                     All Japan SepakTakraw<br>
                     Open Championship
@@ -206,6 +209,7 @@
     </div> 
     
     
+    <script src="scripts/libs/loading.js"></script>
     <script src="scripts/libs/text-animation.js"></script>
     <script src="scripts/libs/mobile-menu.js"></script>
     <script src="scripts/main.js"></script>

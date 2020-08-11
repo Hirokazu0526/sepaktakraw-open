@@ -13,10 +13,35 @@
    transition: 1s .5s;
     }
   }
-
-
 }
 
 
+@keyframes showTextFromBottom{
+  0%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+@keyframes showText{
+  0%{
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100%{
+    opacity: 1;
+  }
+}
 
+.textAnimation span{
+  display: inline-block;
+  animation: showText .5s backwards;
+}
+// .textAnimation > span{
+//   overflow: hidden;
+// }
+// .textAnimation > span > span {
+//   animation: showTextFromBottom .5s backwards;
+// }
 

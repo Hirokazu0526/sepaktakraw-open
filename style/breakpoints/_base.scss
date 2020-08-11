@@ -79,6 +79,12 @@ body {
     transition: 0.3s;
   }
 
+.loading{
+  img{
+    width: 50px;
+  }
+}
+
   .loading.active{
     opacity: 1;
     visibility: visible;
@@ -88,10 +94,22 @@ body {
       opacity: .5;
     }
   }
+  @keyframes roolling{
+    0%{
+      transform: rotate(0);
+    }
+    
+    100%{
+      transform: rotate(360deg);
+    }
+  }
 
-  .loadongText{
+  .loadingText{
     animation: flashing .5s infinite;
     color: rgb(33, 65, 245);
+  }
+  .loadingball{
+    animation: roolling 1s ease-in-out infinite;
   }
 
 // #global-container{

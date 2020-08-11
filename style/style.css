@@ -425,6 +425,56 @@
   transition: 1s .5s;
 }
 
+@-webkit-keyframes showTextFromBottom {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes showTextFromBottom {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes showText {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showText {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.textAnimation span {
+  display: inline-block;
+  -webkit-animation: showText .5s backwards;
+          animation: showText .5s backwards;
+}
+
 img {
   max-width: 100%;
   vertical-align: bottom;
@@ -717,11 +767,11 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   height: 300px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .mobile-sns-icon a {
@@ -883,6 +933,53 @@ img {
   margin: 0 auto;
 }
 
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.loading.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@-webkit-keyframes flashing {
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes flashing {
+  50% {
+    opacity: .5;
+  }
+}
+
+.loadongText {
+  -webkit-animation: flashing .5s infinite;
+          animation: flashing .5s infinite;
+  color: #2141f5;
+}
+
 .header-top {
   position: fixed;
   height: 90px;
@@ -895,12 +992,10 @@ img {
   position: absolute;
   top: 20px;
   left: 10px;
-  font-size: 1.2rem;
+  font-size: 0.6rem;
+  display: inline-block;
   z-index: 2;
-  color: #DA8E00;
-  background: -webkit-linear-gradient(-45deg, #F7DE05, #DA8E00, #EDAC06, #F7DE05, #ECB802, #DAAF08, #B67B03, #DA8E00, #EDAC06, #F7DE05, #ECB802, #EDAC06);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #cc9123;
 }
 
 .header-chara {
@@ -919,17 +1014,6 @@ img {
   display: none;
   background: rbga(0, 12, 75, 0.8);
   border-top: 1px solid #001FC9;
-}
-
-.header-nav.nav_fixed {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border-top: none;
-  border-bottom: none;
-  width: 100%;
 }
 
 .header-nav-list {
@@ -1202,14 +1286,14 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
   .header-top {
     display: inline-block;
-    position: fixed;
+    position: absolute;
     height: 120px;
     background: none;
     z-index: 20;
     background: rgba(0, 8, 90, 0.5);
   }
   .header-logo-ttl {
-    font-size: 1.3rem;
+    font-size: 0.7rem;
     top: 30px;
     left: 20px;
   }
@@ -1222,7 +1306,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     right: 255px;
   }
   .header-nav {
-    position: fixed;
+    position: absolute;
     top: 120px;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1236,11 +1320,20 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     z-index: 20;
     background-color: rgba(0, 8, 90, 0.5);
   }
+  .header-nav.nav_fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border-top: none;
+    border-bottom: none;
+    width: 100%;
+  }
   .header-nav-list a {
     font-size: 1.3rem;
   }
   .sns-icon {
-    position: fixed;
     top: 10px;
     right: 20px;
     display: inline-block;
@@ -1256,9 +1349,17 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .main-slider-sp {
     display: none;
   }
+  .bc {
+    opacity: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
   .bc-text {
-    top: 40%;
+    top: 50%;
     font-size: 3rem;
+  }
+  .bc.bg-active {
+    opacity: 1;
   }
   .kv {
     width: 100%;
@@ -1317,7 +1418,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     background: #fff;
     margin-top: 30px;
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
   .sponsor-logo {
     display: -webkit-box;
@@ -1338,8 +1439,8 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
   .sponsor-logo a {
     display: block;
-    width: 220px;
-    margin: 0 16px;
+    width: 200px;
+    margin: 0 20px;
   }
   .sponsor-logo a:nth-child(2) {
     width: 150px;
@@ -1385,7 +1486,7 @@ Stylesheet: 960px以上のモニタで適用
     margin: 0 auto;
   }
   .header-logo-ttl {
-    font-size: 2rem;
+    font-size: 1.1rem;
     top: 20px;
     left: 30px;
   }
@@ -1393,7 +1494,7 @@ Stylesheet: 960px以上のモニタで適用
     font-size: 1.7rem;
   }
   .bc-text {
-    top: 35%;
+    top: 50%;
     font-size: 3.8rem;
   }
   .sponsor-logo a {
@@ -1456,8 +1557,8 @@ Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
   .header-logo-ttl {
-    font-size: 2.2rem;
-    top: 15px;
+    font-size: 1.2rem;
+    top: 13px;
     left: 50px;
   }
   .header-chara img {
@@ -1477,7 +1578,7 @@ Stylesheet: 1280px以上のモニタで適用
   }
   .sponsor-logo a {
     display: block;
-    width: 260px;
+    width: 300px;
     margin: 0 30px;
   }
   .sponsor-item {
@@ -1500,7 +1601,7 @@ Stylesheet: 1280px以上のモニタで適用
     font-size: 2rem;
   }
   .section-text p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
   .section-adress {
     color: white;
@@ -1512,8 +1613,8 @@ Stylesheet: 1280px以上のモニタで適用
     line-height: 40px;
   }
   .section-adress p {
-    font-size: 1.1rem;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 35px;
   }
 }
 

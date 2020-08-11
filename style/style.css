@@ -1188,7 +1188,7 @@ main {
 }
 
 #Schedule .section-subttl {
-  color: #808080;
+  color: #fff;
 }
 
 .section-subttl.sdiv {
@@ -1244,7 +1244,6 @@ main {
   background: #fff;
   margin-top: 30px;
   padding-top: 20px;
-  padding-bottom: 40px;
 }
 
 .sponsor-logo {
@@ -1277,7 +1276,7 @@ main {
 
 .sponsor-item {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 footer {

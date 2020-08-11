@@ -61,6 +61,51 @@ body {
     width: 90%;
     margin: 0 auto;
   }
+
+  .loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+
+  .loading.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  @keyframes flashing{
+    50%{
+      opacity: .5;
+    }
+  }
+
+  .loadongText{
+    animation: flashing .5s infinite;
+    color: rgb(33, 65, 245);
+  }
+
+// #global-container{
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 3s;
+//   z-index: 30;
+  
+//   &.active{
+//     opacity: 1;
+//     visibility: visible;
+//   }  
+// }
+
   
 //headerここから
 .header{
@@ -76,13 +121,14 @@ body {
       position: absolute;
       top: 20px;
       left: 10px;
-      font-size: 1.2rem;
+      font-size: 0.6rem;
+      display: inline-block;
       z-index: 2;
       // color: $cWhite;
-      color: #DA8E00;
-      background: -webkit-linear-gradient(-45deg, #F7DE05, #DA8E00, #EDAC06, #F7DE05, #ECB802, #DAAF08, #B67B03, #DA8E00, #EDAC06, #F7DE05, #ECB802, #EDAC06);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: rgb(204, 145, 35);
+      // background: -webkit-linear-gradient(-45deg, #F7DE05, #DA8E00, #EDAC06, #F7DE05, #ECB802, #DAAF08, #B67B03, #DA8E00, #EDAC06, #F7DE05, #ECB802, #EDAC06);
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
     }
   }
 
@@ -104,15 +150,7 @@ body {
     border-top: 1px solid #001FC9;
     // border-bottom: 1px solid #001FC9;
 
-      &.nav_fixed{//スクロール時の固定
-        position: fixed;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        border-top: none;
-        border-bottom: none;
-        width: 100%;
-      }
+      
 
       &-list{
       display: flex;

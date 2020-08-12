@@ -4,7 +4,7 @@
 let smoothScroll = (target, offset) => {
     let toY;
     let nowY = window.pageYOffset;      //現在のスクロール値
-    const divisor = 8;                  //近づく割合（数値が大きいほどゆっくり近く）
+    const divisor = 20;                  //近づく割合（数値が大きいほどゆっくり近く）
     const range = (divisor / 2) + 1;    //どこまで近づけば処理を終了するか(無限ループにならないように divisor から算出)
   
     //ターゲットの座標

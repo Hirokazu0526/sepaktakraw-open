@@ -33,6 +33,9 @@ body {
   .font-fmS {
     font-family: $Sw;
   }
+  .font-fmSg{
+    font-family: $Sg;
+  }
   .font-sm {
     font-size: 14px;
   }
@@ -137,9 +140,9 @@ body {
   &-logo{
     &-ttl{
       position: absolute;
-      top: 20px;
+      top: 25px;
       left: 10px;
-      font-size: 0.6rem;
+      font-size: 0.58rem;
       display: inline-block;
       z-index: 2;
       // color: $cWhite;

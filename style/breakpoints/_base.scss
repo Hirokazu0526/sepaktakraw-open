@@ -397,7 +397,7 @@ main{
       // &:nth-child(1){
       //   align-self: center;
       // }
-      &:nth-child(2){
+      &:nth-child(4){
         width: 180px;
       }
       // &:nth-child(3){
@@ -409,7 +409,8 @@ main{
       &:nth-child(5){
         width: 180px;
       }
-      &:nth-child(6){
+      &:nth-child(7){
+        width: 250px;
         margin-bottom: 50px;
       }
     }

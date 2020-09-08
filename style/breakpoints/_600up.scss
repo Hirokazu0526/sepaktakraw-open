@@ -196,9 +196,9 @@ main{
         // &:nth-child(1){
         //   align-self: center;
         // }
-        &:nth-child(2){
-          width: 150px;
-        }
+        // &:nth-child(2){
+        //   width: 150px;
+        // }
         // &:nth-child(3){
         //   align-self: center;
         // }
@@ -208,7 +208,10 @@ main{
         &:nth-child(5){
           width: 150px;
         }
-        &:nth-child(6){
+        // &:nth-child(6){
+        //   align-self: center;
+        // }
+        &:nth-child(7){
           margin-bottom: 0px;
         }
       }

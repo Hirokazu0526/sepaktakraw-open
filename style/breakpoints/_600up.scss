@@ -118,6 +118,12 @@ main{
     margin-top: 10px;
 }
   
+.sp{
+  display: none;
+}
+.pc{
+  display: block;
+}
 .section{
     &-inner{
       padding-top: 90px;
@@ -139,6 +145,9 @@ main{
         flex-direction: column;
 
         & .section-info-left{
+          width: 100%;
+        }        
+        & .section-info-right{
           width: 100%;
         }        
 

@@ -924,6 +924,10 @@ img {
   margin-bottom: 80px !important;
 }
 
+.mt {
+  margin-top: 30px !important;
+}
+
 .pb-sm {
   padding-bottom: 16px !important;
 }
@@ -1144,6 +1148,10 @@ main {
 .kv {
   width: 100%;
   margin-top: 10px;
+}
+
+.pc {
+  display: none;
 }
 
 .section-inner {
@@ -1400,6 +1408,12 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     width: 100%;
     margin-top: 10px;
   }
+  .sp {
+    display: none;
+  }
+  .pc {
+    display: block;
+  }
   .section-inner {
     padding-top: 90px;
   }
@@ -1428,6 +1442,9 @@ Stylesheet: 600px以上のタブレットやモニタで適用
             flex-direction: column;
   }
   .section-info.schedule .section-info-left {
+    width: 100%;
+  }
+  .section-info.schedule .section-info-right {
     width: 100%;
   }
   .section-title {

@@ -58,8 +58,22 @@ Stylesheet: 960px以上のモニタで適用
    
     a{
       display: block;
-      width: 260px;
+      width: 280px;
       margin: 0 30px;
+
+      &:nth-child(4){
+        width: 140px;
+      }
+      &:nth-child(5){
+        width: 140px;
+      }
+      // &:nth-child(6){
+      //   align-self: center;
+      // }
+      &:nth-child(7){
+        width: 170px;
+        margin-bottom: 0px;
+      }
     }
   }
   &-item{

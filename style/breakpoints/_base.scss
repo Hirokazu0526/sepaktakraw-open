@@ -54,6 +54,9 @@ body {
   .mb-lg {
     margin-bottom: 80px !important;
   }
+  .mt{
+    margin-top: 30px !important;
+  }
   .pb-sm {
     padding-bottom: 16px !important;
   }
@@ -276,6 +279,9 @@ main{
   margin-top: 10px;
 }
 
+.pc{
+  display: none;
+}
 .section{
   &-inner{
     padding-top: 90px;

@@ -1421,6 +1421,15 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .section-info-right {
     width: 48%;
   }
+  .section-info.schedule {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-info.schedule .section-info-left {
+    width: 100%;
+  }
   .section-title {
     font-size: 2.5rem;
   }
@@ -1545,7 +1554,7 @@ Stylesheet: 960px以上のモニタで適用
     width: 140px;
   }
   .sponsor-logo a:nth-child(7) {
-    width: 170px;
+    width: 180px;
     margin-bottom: 0px;
   }
   .sponsor-item {

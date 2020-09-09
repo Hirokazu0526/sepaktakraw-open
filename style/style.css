@@ -1474,13 +1474,17 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
   .sponsor-logo a {
     display: block;
-    width: 200px;
+    width: 150px;
     margin: 0 20px;
   }
+  .sponsor-logo a:nth-child(4) {
+    width: 100px;
+  }
   .sponsor-logo a:nth-child(5) {
-    width: 150px;
+    width: 100px;
   }
   .sponsor-logo a:nth-child(7) {
+    width: 120px;
     margin-bottom: 0px;
   }
   .sponsor-item {
@@ -1531,8 +1535,18 @@ Stylesheet: 960px以上のモニタで適用
   }
   .sponsor-logo a {
     display: block;
-    width: 260px;
+    width: 280px;
     margin: 0 30px;
+  }
+  .sponsor-logo a:nth-child(4) {
+    width: 140px;
+  }
+  .sponsor-logo a:nth-child(5) {
+    width: 140px;
+  }
+  .sponsor-logo a:nth-child(7) {
+    width: 170px;
+    margin-bottom: 0px;
   }
   .sponsor-item {
     width: 100%;

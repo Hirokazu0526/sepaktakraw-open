@@ -189,7 +189,7 @@ main{
       justify-content: center;
       a{
         display: block;
-        width: 200px;
+        width: 150px;
         margin: 0 20px;
         
   
@@ -202,16 +202,17 @@ main{
         // &:nth-child(3){
         //   align-self: center;
         // }
-        // &:nth-child(4){
-        //   align-self: center;
-        // }
+        &:nth-child(4){
+          width: 100px;
+        }
         &:nth-child(5){
-          width: 150px;
+          width: 100px;
         }
         // &:nth-child(6){
         //   align-self: center;
         // }
         &:nth-child(7){
+          width: 120px;
           margin-bottom: 0px;
         }
       }

@@ -916,6 +916,11 @@ img {
   font-size: 25px;
 }
 
+.font-gd {
+  font-size: 1.3rem !important;
+  color: #f3f05c !important;
+}
+
 .mb-sm {
   margin-bottom: 30px !important;
 }
@@ -1321,6 +1326,10 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
+  .font-gd {
+    font-size: 1.8rem !important;
+    color: #f3f05c !important;
+  }
   .mobile-menu__btn {
     display: none;
   }
@@ -1536,6 +1545,10 @@ Stylesheet: 960px以上のモニタで適用
   }
   .font-lg {
     font-size: 36px;
+  }
+  .font-gd {
+    font-size: 2.5rem !important;
+    color: #f3f05c !important;
   }
   .mb-lg {
     margin-bottom: 150px !important;

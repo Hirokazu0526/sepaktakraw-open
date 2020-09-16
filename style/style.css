@@ -1290,9 +1290,29 @@ main {
   margin-top: 10px;
 }
 
+.slide-item-top h4 span {
+  padding-left: 1.5em;
+}
+
+.slide-item-top p {
+  text-indent: 9em;
+}
+
+.slide-item-top:nth-child(2) h4 span {
+  padding-left: 1rem;
+}
+
+.slide-item-top:nth-child(3) h4 span {
+  padding-left: 3rem;
+}
+
+.slide-item-top:nth-child(4) h4 span {
+  padding-left: 3rem;
+}
+
 .cm {
   color: gold;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .nd {
@@ -1569,6 +1589,35 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .pc {
     display: block;
   }
+  .slide-item {
+    margin: 0 20px;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .slide-item:last-child {
+    margin-bottom: 0;
+  }
+  .slide-item-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slide-item-top p {
+    text-indent: 0;
+  }
+  .slide-item-title {
+    font-size: 1.5rem;
+  }
+  .slide-item-img {
+    width: 630px;
+  }
+  .slide-item-info {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
   .section-inner {
     padding-top: 90px;
   }
@@ -1718,6 +1767,53 @@ Stylesheet: 960px以上のモニタで適用
     top: 50%;
     font-size: 3.8rem;
   }
+  .slide-item {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 15px;
+  }
+  .slide-item-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slide-item-top p {
+    text-indent: 0;
+  }
+  .slide-item-top:nth-child(2) h4 span {
+    padding-left: 1.5rem;
+  }
+  .slide-item-top:nth-child(3) h4 span {
+    padding-left: 4rem;
+  }
+  .slide-item-top:nth-child(4) h4 span {
+    padding-left: 4rem;
+  }
+  .slide-item-title {
+    font-size: 2rem;
+  }
+  .slide-item-img {
+    width: 700px;
+  }
+  .slide-item-info {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .cm {
+    color: gold;
+    font-size: 2rem;
+  }
+  .nd {
+    color: silver;
+    font-size: 1.8rem;
+  }
+  .rd {
+    color: #815a2b;
+    font-size: 1.6rem;
+  }
   .sponsor-logo a {
     display: block;
     width: 280px;
@@ -1821,6 +1917,29 @@ Stylesheet: 1280px以上のモニタで適用
   }
   .sns-icon a:hover {
     opacity: 1;
+  }
+  .slide-item {
+    margin: 0 50px;
+    padding: 20px;
+  }
+  .slide-item-title {
+    font-size: 2.5rem;
+  }
+  .slide-item-img {
+    width: 800px;
+  }
+  .slide-item-text {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  .cm {
+    font-size: 2rem;
+  }
+  .nd {
+    font-size: 1.8rem;
+  }
+  .rd {
+    font-size: 1.7rem;
   }
   .section-title {
     font-size: 3rem;

@@ -286,6 +286,58 @@ main{
 .pc{
   display: none;
 }
+
+.slide{
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  overflow: auto;
+
+  &-item{
+      scroll-snap-align: center;
+      // display: inline-block;
+      white-space: normal;
+      margin: 0 5px;
+      background: white;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 30px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      &-title{
+          font-size: 1.3rem;
+          margin-bottom: 5px;
+      }
+
+      &-img{
+          width: 400px;
+      }
+
+      &-info{
+          color: black;
+          font-size: 0.5rem;
+          margin-top: 10px;
+      }
+  }
+}
+.cm{
+  color: gold;
+  font-size: 1.4rem;
+}
+.nd{
+  color: silver;
+  font-size: 1.2rem;
+}
+.rd{
+  color: #815a2b;
+  font-size: 1rem;
+}
+
+
+
+
+
 .section{
   &-inner{
     padding-top: 90px;

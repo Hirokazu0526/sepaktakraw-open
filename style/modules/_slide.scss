@@ -1,0 +1,52 @@
+.sd{
+    color: $sdiv;
+}
+.md{
+    color: $mdiv;
+}
+.wd{
+    color:  $wdiv;
+}
+
+// .slide{
+//     scroll-snap-type: x mandatory;
+//     white-space: nowrap;
+//     overflow: auto;
+
+//     &-item{
+//         scroll-snap-align: center;
+//         display: inline-block;
+//         white-space: normal;
+//         margin: 0 50px;
+//         background: white;
+//         border-radius: 10px;
+//         padding: 20px;
+
+//         &-title{
+//             font-size: 3rem;
+//         }
+
+//         &-img{
+//             width: 800px;
+//         }
+
+//         &-text{
+//             color: black;
+//             font-size: 1.5rem;
+//             margin-top: 20px;
+//         }
+//     }
+// }
+
+// .cm{
+//     color: gold;
+//     font-size: 2rem;
+// }
+// .nd{
+//     color: silver;
+//     font-size: 1.6rem;
+// }
+// .rd{
+//     color: #815a2b;
+//     font-size: 1.5rem;
+// }

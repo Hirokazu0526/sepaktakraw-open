@@ -1259,12 +1259,12 @@ main {
       scroll-snap-type: x mandatory;
   white-space: nowrap;
   overflow: auto;
+  margin: 0 auto;
 }
 
 .slide-item {
   scroll-snap-align: center;
   white-space: normal;
-  margin: 0 5px;
   background: white;
   border-radius: 10px;
   padding: 10px;

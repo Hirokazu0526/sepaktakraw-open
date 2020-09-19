@@ -43,7 +43,7 @@ Stylesheet: 960px以上のモニタで適用
   &-nav{
     &-list{
       a{
-        font-size: 1.7rem;
+        font-size: 1.4rem;
       }
     }
   }
@@ -123,6 +123,18 @@ Stylesheet: 960px以上のモニタで適用
     font-size: 1.6rem;
 }
 
+.live{
+  &-img{
+    &-pc{
+      display: block;
+      width: 90%;
+    }
+    &-sp{
+      display: none;
+    }
+
+  }
+}
 
 .sponsor{
   &-logo{
@@ -196,3 +208,4 @@ font-size: 2rem;
 .section-subttl.wdiv{
 font-size: 2rem;
 }
+

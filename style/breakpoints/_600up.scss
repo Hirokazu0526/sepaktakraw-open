@@ -69,7 +69,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
         &-list{
 
             a{
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
         }
     }
@@ -284,3 +284,27 @@ main{
     }
   }
 
+  .live{
+    &-info{
+    }
+    &-text{
+      &-item{
+        & .information{
+          // width: 290px;
+          font-size: 25px;
+        }
+      }
+    }
+
+    &-img{
+      &-pc{
+        display: block;
+        // margin: 0 auto;
+      }
+      &-sp{
+        display: none;
+        margin: 0 auto;
+      }
+    }
+
+  }

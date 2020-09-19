@@ -131,3 +131,45 @@ Stylesheet: 1280px以上のモニタで適用
       }
     }
   }
+
+  .live{
+    &-info{
+      display: flex;
+      justify-content: space-between;
+    }
+    &-subttl{
+      font-size: 2.3rem !important;
+    }
+
+
+    &-text{
+      &-item{
+        & .information{
+          width: 500px;
+          font-size: 1.3rem;
+        }
+      }
+
+      &-item{
+        &-m{
+          font-size: 2rem!important;
+        }
+        &-w{
+          font-size: 2rem!important;
+        }
+        &-s{
+          font-size: 2rem!important;
+        }
+      }
+    }
+
+    &-img{
+      &-pc{
+        display: block;
+      }
+      &-sp{
+        display: none;
+        margin: 0 auto;
+      }
+    }
+  }

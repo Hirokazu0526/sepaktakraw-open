@@ -1478,6 +1478,53 @@ footer small {
   line-height: 60px;
 }
 
+.live-subttl {
+  font-family: "Audiowide";
+  font-size: 1.8rem !important;
+  color: white !important;
+}
+
+.live-img-pc {
+  display: none;
+}
+
+.live-text-item {
+  margin-top: 10px;
+}
+
+.live-text-item-m {
+  font-size: 1.2rem !important;
+  color: #47FF2F !important;
+}
+
+.live-text-item-m > span {
+  color: white;
+}
+
+.live-text-item-w {
+  font-size: 1.2rem !important;
+  color: #FF58D9 !important;
+}
+
+.live-text-item-w > span {
+  color: white;
+}
+
+.live-text-item-s {
+  font-size: 1.2rem !important;
+  color: #08BDFF !important;
+}
+
+.live-text-item-s > span {
+  color: white;
+}
+
+.live-text-item .information {
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
@@ -1549,7 +1596,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     width: 100%;
   }
   .header-nav-list a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .sns-icon {
     top: 10px;
@@ -1721,6 +1768,16 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     width: 100%;
     margin-top: 30px;
   }
+  .live-text-item .information {
+    font-size: 25px;
+  }
+  .live-img-pc {
+    display: block;
+  }
+  .live-img-sp {
+    display: none;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 960px) {
@@ -1761,7 +1818,7 @@ Stylesheet: 960px以上のモニタで適用
     left: 30px;
   }
   .header-nav-list a {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   .bc-text {
     top: 50%;
@@ -1813,6 +1870,13 @@ Stylesheet: 960px以上のモニタで適用
   .rd {
     color: #815a2b;
     font-size: 1.6rem;
+  }
+  .live-img-pc {
+    display: block;
+    width: 90%;
+  }
+  .live-img-sp {
+    display: none;
   }
   .sponsor-logo a {
     display: block;
@@ -1965,6 +2029,37 @@ Stylesheet: 1280px以上のモニタで適用
   .section-adress p {
     font-size: 1.5rem;
     line-height: 35px;
+  }
+  .live-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .live-subttl {
+    font-size: 2.3rem !important;
+  }
+  .live-text-item .information {
+    width: 500px;
+    font-size: 1.3rem;
+  }
+  .live-text-item-m {
+    font-size: 2rem !important;
+  }
+  .live-text-item-w {
+    font-size: 2rem !important;
+  }
+  .live-text-item-s {
+    font-size: 2rem !important;
+  }
+  .live-img-pc {
+    display: block;
+  }
+  .live-img-sp {
+    display: none;
+    margin: 0 auto;
   }
 }
 

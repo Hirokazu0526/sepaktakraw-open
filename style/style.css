@@ -1523,6 +1523,7 @@ footer small {
   color: red;
   font-weight: bold;
   font-size: 15px;
+  font-family: "Sawarabi Gothic";
 }
 
 @media (min-width: 480px) {

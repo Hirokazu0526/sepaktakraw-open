@@ -4,172 +4,169 @@ Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
 .header{
-  
-    &-logo{
-        &-ttl{
-            font-size: 1.2rem;
-            top: 13px;
-            left: 50px;
-        }
-    }
-
-    &-chara{
-        img{
-            right: 350px;
-        }
-    }
-  
-    &-nav{
-      &-list{
-        a{
-          font-size: 2rem;
-            &:hover{
-          // color: blue;
-            font-size: 2.2rem;
-            transition: all 0.3s;
-        }
-          
-
-          }
-        }
-      
-    }
-  }
-  
-  .bc{
-    &-text{
-      top: 50%;
-      font-size: 4rem;
-  
-    }
-  }
-  
-  .sponsor{
-    &-logo{
-     
-      a{
-        display: block;
-        width: 300px;
-        margin: 0 30px;
+  &-logo{
+      &-ttl{
+          font-size: 1.2rem;
+          top: 13px;
+          left: 50px;
       }
+  }
+
+  &-chara{
+      img{
+          right: 350px;
+      }
+  }
+
+  &-nav{
+    &-list{
+      a{
+        font-size: 2rem;
+          &:hover{
+        // color: blue;
+          font-size: 2.2rem;
+          transition: all 0.3s;
+      }
+        
+        }
+      }
+    
+  }
+}
+  
+.bc{
+  &-text{
+    top: 50%;
+    font-size: 4rem;
+
+  }
+}
+  
+.sponsor{
+  &-logo{
+    a{
+      display: block;
+      width: 300px;
+      margin: 0 30px;
     }
+  }
+  &-item{
+    width: 100%;
+    margin-top: 30px;
+
+  }
+}
+
+.sns-icon{
+    right: 110px;
+    a{
+      &:hover{
+          opacity: 1;
+          }
+    }
+}
+
+.slide{
     &-item{
-      width: 100%;
-      margin-top: 30px;
+        margin: 0 50px;
+        padding: 20px;
+
+        &-title{
+            font-size: 2.5rem;
+        }
+
+        &-img{
+            width: 800px;
+        }
+
+        &-text{
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+    }
+}
+
+.cm{
+    font-size: 2rem;
+}
+.nd{
+    font-size: 1.8rem;
+}
+.rd{
+    font-size: 1.7rem;
+}
   
+.section{
+  &-title{
+    font-size: 3rem;
+  }
+
+  &-subttl{
+      font-size: 1.4rem;
+      &.stadium{
+        font-size: 2rem;
     }
   }
 
-  .sns-icon{
-      right: 110px;
-      a{
-        &:hover{
-            opacity: 1;
-            }
-      }
-  }
-
-  .slide{
-      &-item{
-          margin: 0 50px;
-          padding: 20px;
-
-          &-title{
-              font-size: 2.5rem;
-          }
-
-          &-img{
-              width: 800px;
-          }
-
-          &-text{
-              font-size: 2rem;
-              margin-top: 20px;
-          }
-      }
-  }
-
-  .cm{
-      font-size: 2rem;
-  }
-  .nd{
-      font-size: 1.8rem;
-  }
-  .rd{
-      font-size: 1.7rem;
-  }
-  
-  .section{
-    &-title{
-      font-size: 3rem;
+  &-text{
+    p{
+    font-size: 1.6rem;
     }
-  
-    &-subttl{
-        font-size: 1.4rem;
-        &.stadium{
-          font-size: 2rem;
-      }
-    }
-  
-    &-text{
-      p{
+  }
+
+  &-adress{
+    color: $cWhite;
+    line-height: 30px;
+    h4{
       font-size: 1.6rem;
+      margin-bottom: 5px;
+      line-height: 40px;
+    }
+    p{
+      font-size: 1.5rem;
+      line-height: 35px;
+    }
+  }
+}
+
+.live{
+  &-info{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-subttl{
+    font-size: 2.3rem !important;
+  }
+
+
+  &-text{
+    &-item{
+      & .information{
+        width: 500px;
+        font-size: 1.3rem;
       }
     }
-  
-    &-adress{
-      color: $cWhite;
-      line-height: 30px;
-      h4{
-        font-size: 1.6rem;
-        margin-bottom: 5px;
-        line-height: 40px;
+
+    &-item{
+      &-m{
+        font-size: 2rem!important;
       }
-      p{
-        font-size: 1.5rem;
-        line-height: 35px;
+      &-w{
+        font-size: 2rem!important;
+      }
+      &-s{
+        font-size: 2rem!important;
       }
     }
   }
 
-  .live{
-    &-info{
-      display: flex;
-      justify-content: space-between;
+  &-img{
+    &-pc{
+      display: block;
     }
-    &-subttl{
-      font-size: 2.3rem !important;
-    }
-
-
-    &-text{
-      &-item{
-        & .information{
-          width: 500px;
-          font-size: 1.3rem;
-        }
-      }
-
-      &-item{
-        &-m{
-          font-size: 2rem!important;
-        }
-        &-w{
-          font-size: 2rem!important;
-        }
-        &-s{
-          font-size: 2rem!important;
-        }
-      }
-    }
-
-    &-img{
-      &-pc{
-        display: block;
-      }
-      &-sp{
-        display: none;
-        margin: 0 auto;
-      }
+    &-sp{
+      display: none;
+      margin: 0 auto;
     }
   }
+}

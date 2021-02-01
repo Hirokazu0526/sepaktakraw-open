@@ -956,6 +956,7 @@ Stylesheet: ベーススタイル
 ******************************************************************/
 body {
   font-family: "Audiowide","Sawarabi Mincho", 'PT Serif', "Kameron", "Noto Sans JP", sans-serif;
+  background: #02001c;
   background-image: -webkit-gradient(linear, left top, right top, from(#00085a), color-stop(#4790e9), to(#00085a));
   background-image: linear-gradient(to right, #00085a, #4790e9, #00085a);
   padding: 0;
